@@ -1,0 +1,129 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    background: lightslategray;
+}
+
+.Center table {
+    border: 1px solid #000;
+    width: 400px;
+    height: 400px;
+    margin-top: 70px;
+    margin-left: 60px;
+    background-color: rgba(73, 139, 238,0.5);
+    box-shadow: 5px 5px 10px 0px black,
+                inset 0px 0px 20px;  
+}
+
+.Center table td {
+  
+   border: 1px solid white;
+}
+
+.ColorShip{
+    background: rgb(246, 217, 138);
+background-image: url(../battleship/boom.png);
+background-size: cover;
+background-position: center;
+}
+
+.ColorSea{
+background-color: lightskyblue;
+}
+
+.colorGray{
+    background-color: gray;
+}
+
+.Right{
+    margin-top:320px;
+    margin-left: -39%;
+    position: absolute;
+}
+.Right table td{
+    padding: 10px;
+    width: 110px;
+    text-align: center;
+    font-size: large;
+    background-color: rgba(169, 204, 255, 0.774);
+    border: 1px solid;
+     border-collapse: collapse;
+}
+.Right table{
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px,
+                inset 0px 0px 10px;
+}
+.Left{
+    background-color: rgba(169, 204, 255, 0.774);
+    box-shadow: 5px 5px 5px,
+                inset 0px 0px 10px;
+    border-radius: 5px;
+    margin-top: -60px;
+    width: 240px;
+    height: 340px;
+    padding: 10px;
+    text-align: center;
+    margin-left: -39%;
+    position: absolute;
+}
+.Left h3{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: rgb(255, 56, 105);
+}
+h4{
+    color: rgb(255, 56, 105);
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+.Left input{
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.Left label{
+    font-weight: bold;
+}
+.Left button{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    font-size: 20px;
+    width: 70px;
+    background-color: #fff;
+    color: #03a9f4;
+    border: 1px solid #03a9f4;
+    border-radius: 5px;
+    transition: all .5s;
+}
+.Left button:hover{
+    transform: scale(1.1);
+}
+#BOOM{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 200;
+}
+.imgb{
+    width: 0px;
+    animation:boomanm 2 0.7s alternate;/* הקמה של אנימציה */
+}
+@keyframes boomanm{
+    0%{width: 0px; }/* התחלה של האינמציה מ 0 אחוז  */
+    100%{width: 800px;}/*קפיצה של האינמציה ל 100 אחוז  */
+}
+.Left .return{
+    width: 45px;
+    height: 45px;
+    font-size: 11px;
+}
+.Left .return:hover{
+    background: rgb(255, 74, 74);
+    color: #000;
+    font-weight: bold;
+}

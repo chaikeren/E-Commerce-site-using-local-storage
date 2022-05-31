@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <script src="js/functions.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/Product.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>makeProd</title>
+</head>
+<header id="header">
+    <img src="video/logo.png" class="logo" alt="">
+    <div id="toggle"></div>
+    <div id="navbar"></div>
+    <div id="menu">
+    <ul>
+        <li><a href="makeProd.html">Make Product</a></li>
+        <li><a href="adminProductTable.html">Admin Products Table</a></li>
+        <li><a href="AdminUserTable.html">Admin User Menu</a></li>
+        <li><a href="index.html" onclick="AdminLogOut()">Logout</a></li>
+    </ul>
+    </div>
+</header>
+<body class="prod_body">
+    <div class="prod_form productForm">
+        <form id = "product_form">
+            <h3>Make Product</h3>
+            <input type="text" id="prod_id" placeholder="ID"" pattern="[a-zA-Z0-9]+" required>
+            <input type="text" id="prod_name" placeholder="Name" pattern="[a-zA-Z\s]*" required>
+            <input type="number" id="prod_price" step="0.01" min="0" placeholder="Price" required>
+            <input type="text" id="prod_description" placeholder="Description" required>
+            <input type="file" id="product_file" accept=".jpg, .jpeg" placeholder="Image" required> <!--removing the reqired just for tests-->
+            <img id="product_image" src="video/empty-img.png"><br>
+            <label for="category">Category:</label>
+            <select name="category" id="category">
+                <option value="Toys">Toys</option>
+                <option value="Home">Home</option>
+                <option value="Office">Office</option>
+                <option value="Garden">Garden</option>
+            </select><br>
+            <input type="submit" id="btn5" value="Create"></input>
+            <input type="submit" id="go_admin_page" value="Return"></input>
+        </form>
+    </div>
+</body>
+</html>

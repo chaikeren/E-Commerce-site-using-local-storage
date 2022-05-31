@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <script src="js/functions.js"></script>
+    <script src="js/User.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header id="header">
+        <h1><a href="product.html"><i id="shopping_cart" class="fa fa-shopping-cart"></i></a></h1>
+        <img src="video/logo.png" class="logo" alt="">
+        <div id="toggle"></div>
+        <div id="navbar"></div>
+        <center>
+            <div class="box3" id="login">
+                <form id="info_form" action="">
+                <img id="index_user_proflile_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3lC0SfgqCcTGipFh64hddM6xgBYQj90wOA&usqp=CAU">
+                <input id="index_user_proflile_file" type="file" name="" accept=".jpg, .jpeg">
+                <label class="profLabel" for="index_user_proflile_file">Edit Pic</label>
+                <input id="profile_username" type="text" name="" placeholder="User Name" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*+`~'=?\|\]\[\(\)\-<>/]).{8,60}" required>
+                <input id="profile_email" type="email" name="" placeholder="email" pattern=".+@[a-zA-Z]*\.com" required>
+                <input id="profile_city" type="text" name="" placeholder="City" pattern="[א-ת\s]*" required>
+                <input id="profile_adress" type="text" name="" placeholder="Adress" pattern="[א-ת\s]*" required>
+                <input id="profile_streetNumber" type="text" name="" placeholder="Street number" pattern="[0-9]*" min="1" max="304" required>
+                <button class="profBtn leftBtn">Logout</button>
+                <button type="submit" class="profBtn rightBtn">Done</button>
+                <a href="battleship/battleship.html"><img id="battleShipIcon" src="video/BattleShip.PNG"></a>
+            </form>
+            </div>
+        </center>
+        <div id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="contactUS.html">Contact</a></li>
+        </ul>
+        </div>
+    </header>
+    <div class="banner">
+        <video autoplay muted loop id="MainVideo">
+            <source src="video/home2.mp4" type="video/mp4">
+        </video>
+        <image id='peerVideo' src="video/Loggin-In.gif" type="gif">
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="">about us</a></li>
+                        <li><a href="">our services</a></li>
+                        <li><a href="">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">shipping</a></li>
+                        <li><a href="">returns</a></li>
+                        <li><a href="">order status</a></li>
+                        <li><a href="">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online shop</h4>
+                    <ul>
+                        <li><a href="">watch</a></li>
+                        <li><a href="">bag</a></li>
+                        <li><a href="">shoes</a></li>
+                        <li><a href="">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

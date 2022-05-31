@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="battleship.html"></script>
+    <script defer src="functions.js"></script>
+    <script defer src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="BOOM"></div>
+    <div class="Left">
+        <h3>Choose your grid Size</h3>
+        <section>
+            <input checked="checked" type="radio" name="radio-Size" data-size="10">
+            <label for="radio-Size" >10x10</label>
+            <input type="radio" name="radio-Size"  data-size="11">
+            <label for="radio-Size">11x11</label><br>
+            <input type="radio" name="radio-Size" data-size="12">
+            <label for="radio-Size">12x12</label>
+            <input type="radio" name="radio-Size"  data-size="13">
+            <label for="radio-Size">13x13</label><br>
+            <input type="radio" name="radio-Size" data-size="14">
+            <label for="radio-Size">14x14</label>
+            <input type="radio" name="radio-Size" data-size="15">
+            <label for="radio-Size">15x15</label>
+        </section>
+
+        <h4>choose numbers of battlships</h4>
+        <section class="Left-size">
+         <label for="Number-ship">Battleship size 2 : </label>
+        <input  max="5" min="0" value="0" class="Number-ships" type="number" name="Number-ship"><br>
+        <label  for="Number-ship">Battleship size 3 :  </label>
+        <input  max="4" min="0" value="0" class="Number-ships" type="number" name="Number-ship"><br>
+        <label for="Number-ship">Battleship size 4 : </label>
+        <input  max="4" min="0" value="0" class="Number-ships" type="number" name="Number-ship"><br>
+        <label  for="Number-ship">Battleship size 5 :</label>
+        <input max="3" min="0" value="0" class="Number-ships" type="number" name="Number-ship"><br>
+           
+        </section>
+         <button>Start Game</button>
+         <button onclick="window.location.reload()" >rest Game</button>
+         <a href="/index.html"><button class="return">Return to menu</button></a>
+    </div>
+     
+    <div class="Center">
+    </div>
+    <div class="Right">
+        <table>
+            <tr>
+                <td >sub Type</td>
+                <td>Sub Amount</td>
+            </tr>
+            <tr>
+                <td>sub type 2</td>
+                <td class="SHIPType"></td>
+            </tr>
+            <tr>
+                <td>sub type 3</td>
+                <td class="SHIPType"></td>
+            </tr>
+            <tr>
+                <td>sub type 4</td>
+                <td class="SHIPType"></td>
+            </tr>
+            <tr>
+                <td>sub type 5</td>
+                <td class="SHIPType"></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

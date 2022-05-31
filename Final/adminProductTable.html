@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <script src="js/functions.js"></script>
+    <script src="js/User.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>adminProductTable</title>
+</head>
+<body class="tb_products">
+    <header id="header">
+        <img src="video/logo.png" class="logo" alt="">
+        <div id="toggle"></div>
+        <div id="navbar"></div>
+        <div id="menu">
+        <ul>
+            <li><a href="makeProd.html">Make Product</a></li>
+            <li><a href="adminProductTable.html">Admin Products Table</a></li>
+            <li><a href="AdminUserTable.html">Admin User Menu</a></li>
+            <li><a href="index.html" onclick="AdminLogOut()">Logout</a></li>
+        </ul>
+        </div>
+    </header>
+    <h4 class="h4_admin">Admin Page: Product Managment</h4>
+    <table class="tbody2" id="tb1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th onClick = "SortColum('age')">Price</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Delete / Edit</th>
+            </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+        <br>
+        <br>
+        <br>
+        <br>
+</body>
+</html>

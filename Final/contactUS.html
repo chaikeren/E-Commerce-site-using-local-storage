@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <script src="js/functions.js"></script>
+    <script src="js/User.js"></script>
+    <script defer src="js/main.js"></script>
+</head>
+<body class="cus">
+    <header id="header">
+        <h1><a href="product.html"><i id="shopping_cart" class="fa fa-shopping-cart"></i></a></h1>
+        <img src="video/logo.png" class="logo" alt="">
+        <div id="toggle"></div>
+        <div id="navbar"></div>
+        <center>
+            <div class="box3" id="login">
+                <form id="info_form">
+                <img id="index_user_proflile_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3lC0SfgqCcTGipFh64hddM6xgBYQj90wOA&usqp=CAU">
+                <input id="index_user_proflile_file" type="file" name="" accept=".jpg, .jpeg">
+                <label class="profLabel" for="index_user_proflile_file">Edit Pic</label>
+
+                <input id="profile_username" type="text" name="" placeholder="User Name" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*+`~'=?\|\]\[\(\)\-<>/]).{8,60}" required>
+                <input id="profile_email" type="email" name="" placeholder="email" pattern=".+@[a-zA-Z]*\.com" required>
+                <input id="profile_city" type="text" name="" placeholder="City" pattern="[א-ת\s]*" required>
+                <input id="profile_adress" type="text" name="" placeholder="Adress" pattern="[א-ת\s]*" required>
+                <input id="profile_streetNumber" type="text" name="" placeholder="Street number" min="0" max="304" required>
+                <button class="profBtn leftBtn">Logout</button>
+                <button type="submit" class="profBtn rightBtn">Done</button>
+                <a href="/battleship/battleship.html"><img id="battleShipIcon" src="video/BattleShip.PNG"></a>
+            </form>
+            </div>
+        </center>
+        <div id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="AboutUs.html">About</a></li>
+            <li><a href="contactUS.html">Contact</a></li>
+        </ul>
+        </div>
+    </header>
+    <div id="rect"><img  class="imgA" src="video/ass2.png"></div>
+    <div class="box" id="box2"></div>
+    <div id="contactUs">
+        <h3>We<h7>don't</h7>Care 
+            <i class="fas fa-heart"></i></h3>
+        <div class="register-container">
+            <form id="register_form2">
+                <div class="form-input">
+                    <label for="contact_name">First Name</label>
+                    <input id="contact_name" type="text" pattern="[a-zA-Z]*" required/>
+                </div>
+                <div class="form-input">
+                    <label for="contact_last_name">Last Name</label>
+                    <input id="contact_last_name" type="text" pattern="[a-zA-Z]*" required/>
+                </div>
+                <div class="form-input">
+                    <label for="contact_email">Email</label>
+                    <input id="contact_email" type="email" pattern=".+@[a-zA-Z]*\.com" required/>
+                </div>
+                <div class="form-input">
+                    <label for="contact_txt_area">Description</label>
+                    <textarea id="contact_txt_area" rows="4" cols="20" pattern="[a-zA-Z]*" placeholder="Enter text here..."></textarea>
+                </div>
+                <div class="form-input">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

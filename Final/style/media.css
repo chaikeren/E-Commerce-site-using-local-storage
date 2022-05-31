@@ -1,0 +1,131 @@
+/**media */
+@media(max-width: 768px){
+    .footer-col{
+        width: 25%;
+        margin-bottom: 30px;
+    }
+    .banner video{
+        width: 102.5%;
+        height: 102.5%;
+        margin-top: -10px;
+    }
+    .p2{
+        padding-left: 10px;
+    }
+    .imgA{
+        display: none;
+    }
+    .container2{
+        max-width: 400px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container2 .blueBg{
+        top: 0;
+        height: 100%;
+    }
+    div.formBx{
+        width: 100%;
+        height: 400px;
+        top: 0;
+        box-shadow: none;
+    }
+    div.blueBg .box2{
+       position: absolute; 
+       width: 100%;
+       height: 120px;
+       bottom: 0;
+    }
+    div.box2.signIn{
+        top: 0;
+    }
+    div.formBx.active{
+        left: 0;
+        top: 150px;
+    }
+    .vid{
+        margin-left: -100px;
+    }
+    .content{
+        margin-left: -100px;
+    }
+    .b1, .b2, .b3, h5{
+        display: none;
+    }
+    .mobile_text{
+        display:grid;
+        padding: 10px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    .mobile_text h2{
+        font-style: italic;
+        padding-top: 100px;
+        position: relative;
+        display:block;
+        font-size: 2em;
+        color: #0c4dff;
+    }
+    .mobile_text h2::after{
+        animation: textFlying 3s forwards;
+        content: '';
+        position: absolute;
+        left: 0%;
+        bottom: 0;
+        transform: translateX(-50%);
+        height: 4px;
+        width: 280px;
+        border-radius: 2px;
+        background: #0c4dff;
+    }
+
+    
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+    .table td{
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+}
+@media(max-width: 375px){
+    .banner .content h1{
+        font-size: 2.7em;
+    } 
+}
+@media(max-width: 414px){
+    .banner .content h1{
+        font-size: 2.7em;
+    } 
+    .p2{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
